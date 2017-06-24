@@ -5,7 +5,7 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: url('images/background.png') #edeff0;
+  background: url('svgs/background.svg') #edeff0;
 }
 
 #container {
@@ -40,6 +40,7 @@ header {
   header nav ul li {
     display: inline-block;
     margin-right: 20px;
+    margin-bottom: 20px;
   }
 
   header nav ul li a img {
@@ -79,4 +80,85 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+
+/* ---- SVG Files ---- */
+
+header svg {
+  width: 28px;
+  height: 24px;
+  overflow: visible;
+}
+
+nav a {
+  transition: transform  1s;
+}
+
+nav a:hover {
+  color: teal;
+  font-size: 1.2em;
+}
+
+nav a:hover .icon path {
+  fill: #ff2052;
+}
+
+nav a:hover .icon {
+  transform: scale(1.25);
+}
+
+
+
+.logo {
+  width: 140px;
+  height: 120px;
+}
+
+.logo-mobile-text {
+  display: none;
+}
+
+main svg {
+  width: 170px;
+  height: 170px;
+  margin-bottom: 15px;
+}
+
+.red .st2,
+.fawn .st2,
+.sable .st2 {
+  fill: black;
+}
+
+.red .st1,
+.fawn .st1,
+.sable .st1 {
+  fill: white;
+}
+
+.fawn .st0 {
+  fill: #F5AD6F;
+}
+
+.fawn .st3 {
+  fill: #F7BF8F;
+}
+
+.red .st3,
+.sable .st3 {
+  fill: #F8C89F;
+}
+
+.sable .st0 {
+  fill: #8b5d2e;
+}
+
+@media (max-width: 425px) {
+    .logo-desktop-text {
+      display: none;
+    }
+    .logo-mobile-text {
+      display: block;
+    }
 }
