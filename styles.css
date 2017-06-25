@@ -156,7 +156,7 @@ main svg {
   fill: #8b5d2e;
 }
 
-@media (min-width: 424px) {
+@media (min-width: 425px) {
     .logo-desktop-text {
       display: block;
     }
